@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árbol Genealógico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      list-style-type: none;
+    }
+    .generation {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .person {
+      text-align: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Árbol Genealógico</h1>
+
+<div class="generation">
+  <div class="person">
+    <p>Matrimonio</p>
+    <ul>
+      <li>Padre</li>
+      <li>Madre</li>
+    </ul>
+  </div>
+</div>
+
+<div class="generation">
+  <div class="person">
+    <p>Primera Generación</p>
+    <ul>
+      <li>Hijo 1
+        <ul>
+          <li>Nieto 1
+            <ul>
+              <li>Biznieto 1</li>
+              <li>Biznieto 2</li>
+            </ul>
+          </li>
+          <li>Nieto 2
+            <ul>
+              <li>Biznieto 3</li>
+              <li>Biznieto 4</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Hijo 2
+        <ul>
+          <li>Nieto 3
+            <ul>
+              <li>Biznieto 5</li>
+              <li>Biznieto 6</li>
+            </ul>
+          </li>
+          <!-- Agrega más nietos y biznietos según sea necesario -->
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Repite el bloque de generación según sea necesario para incluir más generaciones -->
+
+</body>
+</html>

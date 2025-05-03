@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de lófica (realaciones y aritméticos)</title>
+</head>
+
+<body>
+    <!-- 
+        ====================      
+       A) OPERADORES LÓGICOS
+        ====================
+
+        Operador                Símbolo             Descripción
+      Y(copulativas)              &&                 dos sentencias o más
+                                                     todas las sentencias son true
+        
+      O (letra O)                 ||                 dos sentencia o más
+                                                     Alguna de las sentencias será true
+
+      NO (Negaciones)              !                 inversa de la sentencia
+
+
+      =========================
+      B) OPERADORES ARITMÉTICOS
+      =========================
+
+      Operador                   Símbolo               Descripción
+
+      matemático                  *,-,/,+
+
+      Cambio de signo           -(argumento)             cambio de signo del argumento
+
+      Incremento                    ++                   incremento de la unidad
+
+      Decremento                    --                   decremento de la unuidad
+
+      resto de división              %                   resto de la división
+
+        ===========================
+        C) OPERACIONES RELACIONALES
+        ===========================
+       
+        Operador                   Símbolo                Descripción                  
+
+        igualdad                    ==                    igualdad aritmética o relacional (constante)
+
+        distinto a igual            !=                    contrario al argumento que compara (=)
+
+        Mayor                        >                    
+
+        Mayor o igual                >=                   Comparación de cantidad numérica
+
+        Menor o igual                <=
+
+        Menor                         <
+
+        Igualdad estricta           ===                  Igualdad de toda la naturaleza de la variable
+                                                          (tipo y valor)
+                                                           5
+
+        distinto de la
+        igualdad estricta             !==                  Contario al argumento que compara
+
+         -->
+</body>
+<script>
+    /* Operadores relacionales */
+
+    var numero =7;
+
+    console.log('igualdad ' + (numero==7));
+    console.log('igualdad estricta ' + (numero===7));
+    console.log('Mayor que ' + (numero >6));
+    console.log('Mayor que ' + (numero <6));
+
+    console.log('Desigualdad ' + (numero !=7));
+    console.log('Desigualdad ' + (numero !=='7'));
+
+    /* Operadores lógicos  */
+
+    var nombre1='Juan';
+    var nombre2='Pepite';
+
+    console.log('condicion Y : ' + ((nombre1=="Juan") && (nombre2=='Pepite')));
+    console.log('condicion O : ' + ((nombre1=="Juan") || (nombre2=='Pepita')));
+
+/*  console.log('condicion O : ' +  !(nombre2=='Pepite')); NO SE USA AUNQUE ES CORRECTO */
+    console.log('condicion O : ' +  !(nombre2=='Pepite'));
+
+
+
+
+</script>
+</html>

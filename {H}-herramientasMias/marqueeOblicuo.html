@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .marquee-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .marquee-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: marqueeAnimation 15s linear infinite;
+        }
+
+        @keyframes marqueeAnimation {
+            0% { top: 0; left: 0; }
+            100% { top: 100%; left: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            Texto e imagen
+            <img style="width: 25px; height: 25px;" src="src/25dto.png" alt="" title="Virgueria">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* DIAGONAL COMPLETA */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.marquee-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-text {
+    animation: marqueeAnimation 5s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(calc(-50vw + 50vh), calc(50vh - 50vw)); }
+}

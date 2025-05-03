@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herramientasMias</title>
+    <link rel="shortcut icon" href="Images/columns-gap.svg" type="image/x-icon"> <!-- ⬅️ FABICOM -->
+
+    <!-- Librería de Bootstrap conjunta con CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Librería de Bootsrap conjunta con JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- css local -->
+    <link rel="stylesheet" href="css/herraMiStyle1.css">
+
+    <!-- js local -->
+    <script src=""></script>
+
+    <!-- Ventanas de alerta (librería del alert o swal) -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<hr>
+
+<body>
+    <!-- Botón enlazado codificado, sin hoover, en css  OJO AL ENCHUFAR EL BOOTSTRAP NO FUNCIONA BIEN-->
+    <div class="container" style="text-align: center; margin-top: 4em;">
+        <h4>Botón enlazado codificado, sin hoover, en css:</h4>
+        <div style="text-align: center; margin-top: 1em;">
+            <a class="button" href="../{C}-EJECUCIÓN/1-FRAMEWORKS/Ejercicio1A-Introducción/index2.html">Color</a>
+        </div>
+        <hr>
+        <!-- FORMULARIO DE INICIO SE SESIÓN SIN RECOGER NI NOMBRE NI PASWORD EN BBDD -->
+        <h4>Formulario de inicio de sesión sin recoger ni nombre ni password en BBDD</h4>
+        <div style="text-align: center; margin-top: 1em;">
+            <a href="forInicioSesion.html" class="button" style="background-color: rgba(0, 136, 255, 0.831);">Formulario
+                inicio de sesión</a>
+        </div>
+        <hr>
+    </div>
+    <!-- CAMBIO DE COLORES, FONDO Y TEXTO, EN BOOTSTRAP CON COMANDOS BOOTSTRAP -->
+    <div class="container" style="text-align: center;">
+        <!-- <body class="bg-light"></body> -->
+        <h4>Cambio de color del texto en bootstrap</h4>
+        <h3 class="text-dark">Texto Oscuro</h3>
+        <h3 class="text-muted">Texto Aclarado</h3>
+        <hr>
+    </div>
+    <!-- BARRA DE NAVEGACIÓN CON LOS COLORES MODIFICADOS MEDIANTE css -->
+    <h4 style="text-align: center;">Barra de navegación con los colores modificados mediante css</h4>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../{H}-herramientasMias/forInicioSesion.html">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <!-- Otras opciones de menú aquí -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+    <!-- BARRA DEL PROYECTO "MI PRIMERA WEB" PERO RESPONSIVE -->
+    <!-- OJO FALTAN TODOS LOS CSS -->
+    <div class="container">
+        <div class="container my5">
+            <style>
+                #ess {
+                    text-decoration: none;
+                    padding-left: 8px;
+                }
+            </style>
+            <style>
+                .bd-placeholder-img {
+                    font-size: 1.125rem;
+                    text-anchor: middle;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    user-select: none;
+                }
+
+                @media (min-width: 768px) {
+                    .bd-placeholder-img-lg {
+                        font-size: 3.5rem;
+                    }
+                }
+
+                .b-example-divider {
+                    width: 100%;
+                    height: 3rem;
+                    background-color: rgba(0, 0, 0, .1);
+                    border: solid rgba(0, 0, 0, .15);
+                    border-width: 1px 0;
+                    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+                }
+
+                .b-example-vr {
+                    flex-shrink: 0;
+                    width: 1.5rem;
+                    height: 100vh;
+                }
+
+                .bi {
+                    vertical-align: -.125em;
+                    fill: currentColor;
+                }
+
+                .nav-scroller {
+                    position: relative;
+                    z-index: 2;
+                    height: 2.75rem;
+                    overflow-y: hidden;
+                }
+
+                .nav-scroller .nav {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    padding-bottom: 1rem;
+                    margin-top: -1px;
+                    overflow-x: auto;
+                    text-align: center;
+                    white-space: nowrap;
+                    -webkit-overflow-scrolling: touch;
+                }
+
+                .btn-bd-primary {
+                    --bd-violet-bg: #712cf9;
+                    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+                    --bs-btn-font-weight: 600;
+                    --bs-btn-color: var(--bs-white);
+                    --bs-btn-bg: var(--bd-violet-bg);
+                    --bs-btn-border-color: var(--bd-violet-bg);
+                    --bs-btn-hover-color: var(--bs-white);
+                    --bs-btn-hover-bg: #6528e0;
+                    --bs-btn-hover-border-color: #6528e0;
+                    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+                    --bs-btn-active-color: var(--bs-btn-hover-color);
+                    --bs-btn-active-bg: #5a23c8;
+                    --bs-btn-active-border-color: #5a23c8;
+                }
+
+                .bd-mode-toggle {
+                    z-index: 1500;
+                }
+
+                .bd-mode-toggle .dropdown-menu .active .bi {
+                    display: block !important;
+                }
+            </style>
+
+
+            <nav class="navbar navbar-expand-lg navbar-white fixed-top bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand"
+                        href="../{C}-EJECUCIÓN/1-FRAMEWORKS/Ejercicio1A-Introducción/index2.html"><img
+                            src="../{C}-EJECUCIÓN/1-FRAMEWORKS/Ejercicio1A-Introducción/images/columns-gap.svg" alt=""
+                            width="36px" height="36px"><b> iCompany</b></a>
+                 <!-- Responsive --> ➡️  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>  ⬅️ <!-- Responsive  -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button" class="btn btn-outline-primary"><big>Cursos</big></button>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <!-- Opciones del menú desplegable aquí -->
+                                    <li><a class="button" class="dropdown-item" id="ess" href="../src/indexNav.html"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-info-lg" viewBox="0 0 16 16">
+                                        <path
+                                          d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                                      </svg>
+                                      HTML 5</a></li> 
+                                </ul>
+                            </li>
+                            
+                                <li class="nav-item dropdown mb-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button" class="btn btn-outline-secondary"><big>Áreas</big></button>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <!-- Opciones del menú desplegable aquí -->
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button"
+                                        class="btn btn-outline-secondary"><big>Modalidades</big></button>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <!-- Opciones del menú desplegable aquí -->
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button type="button" class="btn btn-outline-secondary"><big>¿Más
+                                            información?</big></button>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <li><a class="dropdown-item"
+                                            href="https://forms.office.com/r/S6vrzehvrg?origin=lprLink"><big>Déjanos tus
+                                                datos</big></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="#"><big class="enlace2">Iniciar Sesión</big>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" class=""/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- CAMBIOS DE COLOR DE TEXTO EN RESPONSIVE -->
+    <div class="text-primary">
+        Este texto será azul en todos los tamaños de pantalla.
+      </div>
+      
+      <div class="d-sm-none text-danger">
+        Este texto será rojo solo en pantallas pequeñas (menos de 576 píxeles).
+      </div>
+      
+      <div class="d-md-none d-lg-none text-success">
+        Este texto será verde solo en pantallas extra pequeñas y pequeñas.
+      </div>
+   <hr>   
+<!-- CAMBIAR PUNTO POR COMA EN LOS DECIMALES PROPORCIONADOS POR JS -->
+<h5>CAMBIAR PUNTO POR COMA EN LOS DECIMALES PROPORCIONADOS POR JS (en el archivo de js)</h5>  
+<hr>
+<!-- Hoover para subrayar links -->
+<h5>Hoover para subrayar links (en el archivo de css)</h5>
+Enlaces <a href="" class="enlace">Prueba de subrayado</a>
+<h5>Hoover para que la raya del enlace aparezca</h5>
+Enlaces <a href="" class="enlace2">Prueba de subrayado</a>
+<hr>
+
+<!-- BOTON CON CSS CON EN EL STYLE EN LOCAL PARA QUE EL BOOTSRAP NO LO JODA y aún así jode la mitad -->
+<style>
+    #id1 {
+        width: 5em;
+        text-align: center;
+        margin-top: 1em; 
+        margin-left: 1em;
+        background-color: rgba(5, 243, 5, 0.765);/*------ Fondo del botón */
+        border-radius: 7px; /* ---------------------------- Redondeo de las esquinas */
+        border-style: groove; /* -------------------------- Estilo del borde (puntos, guiones, doble, etc.)*/
+        border-width: 3px; /* ----------------------------- Grosor del borde */
+        border-color: rgba(243, 198, 108, 0.662); /* -------Color del borde */ 
+        padding: 0.7em 0.9em; /* -------------------------- Margen entre el texto y el borde del botón */
+        font-size: large; /* ------------------------------ Tamaño de la fuente */
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* ------------- Tipo de la fuente */
+        color: white; /* -------------------------------- Color de la fuente */
+        text-decoration: none; /* ------------------------- Quita la ralla del link */
+        
+    } 
+</style>
+<div id="id1">
+    Color
+</div>
+<!-- PRINCIPIO DE BUSCADOR -->
+<div class="container mt-5">
+    <h2>Buscador</h2>
+
+    <!-- Formulario de búsqueda -->
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-primary" type="submit">Buscar</button>
+    </form>
+  </div>
+
+  <!-- BUSCADOR QUE BUSCA -->
+   <div class="container mt-5">
+    <h2>Buscador</h2>
+
+    <!-- Formulario de búsqueda -->
+    <form class="d-flex" onsubmit="return buscar()">
+      <input id="inputBusqueda" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-primary" type="submit">Buscar</button>
+    </form>
+
+    <!-- Lista de elementos para buscar -->
+    <ul id="listaElementos" class="list-group mt-3">
+      <li class="list-group-item">Elemento 1</li>
+      <li class="list-group-item">Elemento 2</li>
+      <li class="list-group-item">Elemento 3</li>
+      <!-- Agrega más elementos según sea necesario -->
+    </ul>
+  </div>
+
+  <!-- Scripts de Bootstrap y otros recursos -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function buscar() {
+      // Obtener el valor de búsqueda
+      var textoBusqueda = document.getElementById('inputBusqueda').value.toLowerCase();
+
+      // Obtener la lista de elementos
+      var listaElementos = document.getElementById('listaElementos').getElementsByTagName('li');
+
+      // Recorrer la lista y mostrar/ocultar elementos según la búsqueda
+      for (var i = 0; i < listaElementos.length; i++) {
+        var elemento = listaElementos[i];
+        var contenido = elemento.textContent.toLowerCase();
+
+        if (contenido.includes(textoBusqueda)) {
+          elemento.style.display = 'list-item';
+        } else {
+          elemento.style.display = 'none';
+        }
+      }
+
+      // Evitar el envío del formulario
+      return false;
+    }
+  </script>
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+
+</body>
+
+</html>

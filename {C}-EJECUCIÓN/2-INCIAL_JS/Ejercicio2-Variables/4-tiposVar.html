@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipado de las variables</title>
+</head>
+<body>
+    <!--              =======================
+                      TIPADO DE LAS VARIABLES
+                      =======================
+
+        1.string:
+            a) Sintaxis: irán simpre definidas por comillas, dobles ("") o simples ('')
+            b) Gramática: las comilla de inicio siempre serán las de cierre, pero ambas
+            comillas pueden coexistir, ej: console.log('style="atributo" +...') 
+        2.number:
+            a) Sintaxis, siempre asociada a un número real.
+            b) Gramática: soporta 3 bases numéricas, por defecto trabaja en base DIEZ (10)
+            También tenmos la base OCTAL (8) y la base HEXADECIMAL (16).
+            la identificación de las bases son:
+                -> Las hexadecimales serán identificadas por un -0x- ej: el 123 en base 10,
+                 sería 0x123 en base exadecimal.
+                 -> Las octales serán identificadas por un -0- el 123 en base octal, sería
+                 0123 en base octal (8)
+        3.boolean:
+            a) Sintaxis: definidos por true o false, comprenden el concpto de variables lógicas.
+            b) gramática, minúscula
+            c) Generar comparaciones, lograr negaciones, dobles negaciones...
+            d) equivalencias: true=1, false=0 y, también, distinto de 1
+        4.objet: 
+            La orientación a objetos, asigunatura pendiente solo al alcance de determinados
+        entornos BACK-END, para su integración, copia JAVA con la diferencia que utiliza un new.
+            a) Sintaxis:
+                var nombreVariable;
+                nombreVariable = new nombreVariable()
+        5.null:
+            a) Una llamada a la variable sin valor, la variable existe, pero no encuentra el
+            valor o no existe.
+            b) Ventajas e inconvenientes. Percibimos, donde surge esta sensación debilmente
+            tipada y por otro lado acceder a momentos que nos interesa que la variable no tenga valor.
+        6.undefined:
+            a) Replica que no encuantra la variable y evidentemente, no hay valor. Está más cerca del
+            error que de una sintaxis buscada.
+
+            Necesitamos identificar el tipo de variable, no su valor. Detectar qué tipo de variable,
+            es para ello encontramos un método: .typeof(), identificar el tipo de variable (sin evaluar)
+         -->
+         <script>
+            var texto = 'JavaScript nivel Inicial';
+            var numero = 7.8;
+            var buleana = false;
+            var fecha = new Date()
+            var nulo = null;
+            var indefinida;
+
+            document.write('la variable texto: ' + texto + ' es del tipo: ' + typeof(texto) + '<br>')
+            document.write('la variable numero: ' + numero + ' es del tipo: ' + typeof(numero) + '<br>')
+            document.write('la variable buleana: ' + buleana + ' es del tipo: ' + typeof(buleana) + '<br>')
+            document.write('la variable fecha: ' + fecha + ' es del tipo: ' + typeof(fecha) + '<br>')
+            document.write('la variable nulo: ' + nulo + ' es del tipo: ' + typeof(nulo) + '<br>')
+            document.write('la variable indefinida: ' + indefinida + ' es del tipo: ' + typeof(indefinida))
+
+         </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio de Sesión</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Formulario de inicio de sesión -->
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="verificarGenero()">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Script de JavaScript -->
+<script>
+    function verificarGenero() {
+        // Obtener el valor del nombre desde el formulario
+        var nombre = document.getElementById("nombre").value; // No convertir a minúsculas
+
+        // Verificar si el nombre es masculino o femenino
+        var genero;
+        if (nombre.toLowerCase().endsWith("o")) {
+            genero = "masculino";
+        } else if (nombre.toLowerCase().endsWith("a") || nombre.toLowerCase().includes("maría")) {
+            genero = "femenino";
+        } else {
+            genero = "desconocido";
+        }
+
+        // Convertir la primera letra del nombre a mayúsculas
+        var nombreConMayuscula = nombre.charAt(0).toUpperCase() + nombre.slice(1);
+
+        // Mostrar el saludo en la pantalla
+        var mensaje;
+        if (genero === "masculino") {
+            mensaje = "¡Bienvenido, " + nombreConMayuscula + "!";
+        } else if (genero === "femenino") {
+            mensaje = "¡Bienvenida, " + nombreConMayuscula + "!";
+        } else {
+            mensaje = "¡Hola, " + nombreConMayuscula + "!";
+        }
+
+        // Mostrar el mensaje en un elemento en el DOM (puedes personalizar esta parte según tu aplicación)
+        document.getElementById("mensajeBienvenida").innerText = mensaje;
+
+        // Puedes realizar otras acciones aquí, como validar la contraseña, redirigir a otra página, etc.
+    }
+</script>
+
+<!-- Bootstrap JS y Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Contenedor para el mensaje de bienvenida -->
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div id="mensajeBienvenida" class="alert alert-info" role="alert"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

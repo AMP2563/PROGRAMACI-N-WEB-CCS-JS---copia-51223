@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio de Sesión</title>
+</head>
+<body>
+
+<!-- Formulario de inicio de sesión -->
+<form id="loginForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <button type="button" onclick="verificarGenero()">Iniciar Sesión</button>
+</form>
+
+<!-- Script de JavaScript -->
+<script>
+    function verificarGenero() {
+        // Obtener el valor del nombre desde el formulario
+        var nombre = document.getElementById("nombre").value.toLowerCase(); // Convertir a minúsculas para facilitar la comparación
+
+        // Verificar si el nombre es masculino o femenino
+        var genero;
+        if (nombre.endsWith("o")) {
+            genero = "masculino";
+        } else if (nombre.endsWith("a") || nombre.includes("maría")) {
+            genero = "femenino";
+        } else {
+            genero = "desconocido";
+        }
+
+        // Mostrar el saludo en la consola (puedes personalizar esta parte según tu aplicación)
+        if (genero === "masculino") {
+            console.log("Bienvenido, " + nombre + "!");
+        } else if (genero === "femenino") {
+            console.log("¡Bienvenida, " + nombre + "!");
+        } else {
+            console.log("¡Hola, " + nombre + "!");
+        }
+
+        // Puedes redirigir a otra página o realizar otras acciones según tus necesidades
+    }
+</script>
+
+</body>
+</html>

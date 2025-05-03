@@ -1,0 +1,26 @@
+/* Página recuadros de colores */
+
+#rojo{
+    background-color: rgba(255, 0, 0, 0.466);
+    padding: 10px;
+    font-weight: bold;
+  
+}
+#verde{
+    padding: 15px;
+    text-align: justify;
+    width: 50%;
+    height: 500px;
+    float: left;
+    background-color: greenyellow;
+    overflow: auto;
+}
+#azul{
+    padding: 15px;
+    margin-left: 20px;
+    width: 50%;
+    height: 500px;
+    background-color: aquamarine;
+    overflow: auto;
+
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentación de Bootstraps</title>
+  <link rel="stylesheet" href="css/...">
+  <!-- LIBRERÍA DE BOOTSTRAP CONJUNTA DE CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- LIBRERÍA DE BOOTSTRAP CONJUNTA DE JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- LIBRERÍA SEPARADA DE POPPERS Y BUNDLEY -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+  <!-- NUESTRO PRIMER FRAMEWORKS 💻 
+Una gran diversidad de estas pequeñas o grandes librerías que ayudan a nutrir
+tanto en su ejecución, presentación o desarrollo de nuestras aplicaciones.
+En concreto Bootstraps será un frameworks, que nos ofrecerá librerías para lograr una
+mejora en la composicón de los elementos de nuestra página.
+Incluirá librerías de css, js,... (jquery, poppers)
+
+Las concesiones a cicho framework, práctiacmente en su mayoría,
+podrán ser inyectados en nuestros proyectos (index) de dos formas:
+
+1. linkados que apuntan a las librerías
+        Fases:
+            a) ir a: https://getbootstrap.com/
+
+            b) linkado de las librerías que nos ofrece bootstrap:
+            👉<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            👉<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+             crossorigin="anonymous">
+            </script>
+            👉<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous">
+            </script>
+            👉<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous">
+            </script>
+            
+            c) El lugar donde linkaremos estos link, OJO principalmente en el <head>
+  
+2. A través de carga directa de dichas librerías a traves de Node.js
+
+ -->
+  <!-- El primer recurso realmente que llevó al éxito a Bootstrap no fueron su gran variedad de estilos,
+      si no el control hacia la multiplataforma, es decir, el "responsive design" básico.
+      Fue definido por la archi classe conocida <container> 
+        -->
+
+  <div class="container">
+    <h1 class="display-3 font-monospace text-secondary">1º EN INTRODUCCIÓN A BOOSTRAP: Estructuras</h1>
+    <hr>
+    <h2 class="display-6" style="text-align: center;">TABLAS</h2>
+    <h3>Ejemplo básico de TABLAS</h3>
+    <table class="table">
+      <thead>
+        <tr class="table-primary">
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style=" font-size: larger; color: blueviolet; ">
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Ejemplo de tabla cebrada</h3>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="display-6" style="text-align: center;">LISTAS</h2>
+    <div class="list-group">
+      <hr>
+      <h3>Ejemplo de lista no ordenada</h3>
+      <a href="#" class="list-group-item list-group-item-action">Indice:</a>
+
+      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">PRIMER ELEMENTO
+        ENLAZADO</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list
+        group item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list
+        group item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group
+        item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list
+        group item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group
+        item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group
+        item</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group
+        item</a>
+    </div>
+    <hr>
+    <h3>Ejemplo lista ordenada</h3>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item list-group-item-action list-group-item-secondary ">A list item</li>
+      <li class="list-group-item list-group-item-action list-group-item-light">A list item</li>
+      <li class="list-group-item list-group-item-action list-group-item-secondary">A list item</li>
+    </ol>
+    <hr>
+    <h2 class="display-6 text-center">Control de textos</h2>
+    <div>
+      <p class="text-start">Inicio de la alineacion</p>
+      <p class="text-center">Alineacion centrada.</p>
+      <p class="text-end">Alineacion al final.</p>
+    </div>
+    <div class=" badge bg-success text-wrap" style="width: 7rem;">
+      Textos encapsulados con color o no
+    </div>
+    <p class="lh-base text-center">This is a <b>long paragraph</b> written to show how the <del>line-height</del> of
+      an element is affected by our
+      utilities. <s>Classes</s> are applied to the element itself or sometimes the parent element. These classes
+      can be
+      customized as needed with our utility <u>API</u> .</p>
+    <p class="text-muted text-start">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at?
+      Non veniam eius velit vero. Ipsum dignissimos eligendi asperiores qui.
+      Dolor dicta laboriosam voluptatibus esse tenetur error sapiente quod soluta?
+      Molestiae, reiciendis! Ex non quod unde alias voluptates ad. Sed!
+      Nam similique fuga nobis enim explicabo unde quae labore voluptate!
+      Minima fugiat cupiditate, voluptas veniam recusandae nam deleniti mollitia quam!
+      Nulla temporibus reiciendis a repellendus voluptatum omnis, eum blanditiis velit.
+      Pariatur voluptate id delectus modi dolor? Adipisci blanditiis ullam maxime?
+      Esse nam eos explicabo voluptates amet! Nam natus nobis consequatur!
+      Quasi eos unde, modi cumque facere qui ad quis sapiente!
+    </p>
+    <p class="text-danger lh-lg" style="text-align: justify;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at?
+      Non veniam eius velit vero. Ipsum dignissimos eligendi asperiores qui.
+      Dolor dicta laboriosam voluptatibus esse tenetur error sapiente quod soluta?
+      Molestiae, reiciendis! Ex non quod unde alias voluptates ad. Sed!
+      Nam similique fuga nobis enim explicabo unde quae labore voluptate!
+      Minima fugiat cupiditate, voluptas veniam recusandae nam deleniti mollitia quam!
+      Nulla temporibus reiciendis a repellendus voluptatum omnis, eum blanditiis velit.
+      Pariatur voluptate id delectus modi dolor? Adipisci blanditiis ullam maxime?
+      Esse nam eos explicabo voluptates amet! Nam natus nobis consequatur!
+      Quasi eos unde, modi cumque facere qui ad quis sapiente!
+    </p>
+    <hr>
+    <h2 class="display-6" style="text-align: center;">Grupo de imágenes (cards)</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- 1ª imágen -->
+      <div class="col">
+        <div class="card">
+          <img src="https://picsum.photos/367/267?random=2" class="card-img-top img-thumbnail" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Imagen bordeada</h5>
+            <p class="card-text">Utilizando la clase definida de bootstrap de .img-thumbnail</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2ª imágen -->
+      <div class="col">
+        <div class="card">
+          <img src="https://picsum.photos/id/6/367/267" class="card-img-top rounded-pill" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Imagen píldora</h5>
+            <p class="card-text">Utiliza la clase .rounded-pill redondea la imgen
+              con formato de píldora
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="background-color: aquamarine;">
+          <img src="https://picsum.photos/id/31/367/267" class="card-img-top rounded-lg" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Imagen bordeada</h5>
+            <p class="card-text">Utili la clase .rounded-lg>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="https://picsum.photos/id/95/367/367" class="card-img-top rounded-circle"
+            style="width: 70%; margin: 8px auto" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Imagen totalmente redondeada</h5>
+            <p class="card-text">Utiliza la clase .rouded-circle, logra el mayor redondeo de la imagen.
+              Lasproporciones de altura y anchura irán en proporción
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h2 class="display-6" style="text-align: center;">Botones (CTA)</h2>
+    <div class="text-center" style="padding: 8px;">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <!-- Botones con un :hover, percepción de cambio de estado, ojo su riesgo en multiplataforma -->
+      <button type="button" class="btn btn-outline-light">OCULTO</button>
+      <button type="button" class="btn btn-outline-dark">Fuera de línea</button>
+
+      <button type="button" class="btn btn-link" style="font-weight: bold;">Link</button>
+      <!-- modificado, perderá alguna característica -->
+      <button type="button" class="btn btn-danger"
+        style="background-color: orange; color: aliceblue;">Modificado</button>
+    </div>
+    <h3>Botones desplegables</h3>
+    <div class="dropdown text-center">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Botón desplegable
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Elemento 1</a></li>
+        <li><a class="dropdown-item" href="#">Elemento 2</a></li>
+        <li><a class="dropdown-item" href="#">Elemento 3</a></li>
+      </ul>
+    </div>
+    <h3>Botón de control de colapso</h3>
+    <p class="text-center">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+        aria-expanded="false" aria-controls="collapseWidthExample">
+        Accede a tu código de descuento
+      </button>
+    </p>
+    <div style="min-height: 120px;">
+      <div class="collapse" id="collapseWidthExample">
+        <div class="card card-body" style="width: 300px; text-align: center; margin: 0 auto;">
+          <code>2342</code>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h2 class="display-6" style="text-align: center;">Barras de navegación (navbar o nav)</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- lugar de las imágenes -->
+        <a class="navbar-brand" href="#">
+          <!-- Inyectamos el conjunto de vectores que define la imagen -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="violet" class="bi bi-bootstrap-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+            <path
+              d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-secondary">Accede>>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <hr>
+    <h2 class="display-6" style="text-align: center;">Formularios con validación</h2>
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="Introduce nombre" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="validationDefault02" placeholder="Introduce apellidos" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefaultUsername" class="form-label">Correo electrónico</label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          <input type="email" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            required>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="validationDefault04" class="form-label">Comunidad Autónoma</label>
+        <select class="form-select" id="validationDefault04" required>
+          <option value=>
+          <option>"Elige tu Comunidad"></option>
+          <option selected disabled value="">Elige...</option>
+          <option>Comunidad de Madrid</option>
+          <option>Comunidad Valenciana</option>
+        </select>
+      </div>
+      <div class="col-md-5">
+        <label for="validationDefault04" class="form-label">Ciudad</label>
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Elige...</option>
+          <option>Madrid</option>
+          <option>Alicante</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="validationDefault05" class="form-label">Código postal</label>
+        <input type="text" class="form-control" id="validationDefault05" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Aceptas los términos y condiciones
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+    <hr>
+    <h2 class="display-6" style="text-align: center;">MODAL llamadas emergentes</h2>
+
+    <!-- Botón de ejecución -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Guardar
+    </button>
+
+    <!-- Ventana emergente CTA -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">GUARDAR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¿Guardar cambios?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-success">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h2 class="display-6" style="text-align: center;">OFFCANVAS llamadas emergentes con contenido</h2>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample">
+    Enlace con referencia
+    </button>
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Botón
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+            etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+            etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+          etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</html>
+</body>

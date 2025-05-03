@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba||</title>
+</head>
+<body>
+    true || true; // t || t retorna `true`
+false || true; // f || t retorna `true`
+true || false; // t || f retorna `true`
+false || 3 === 4; // f || f retorna `false`
+"Cat" || "Dog"; // t || t retorna "Cat"
+false || "Cat"; // f || t retorna "Cat"
+"Cat" || false; // t || f retorna "Cat"
+"" || false; // f || f retorna `false`
+false || ""; // f || f retorna ""
+false || varObject; // f || objeto retorna varObject
+
+</body>
+</html>

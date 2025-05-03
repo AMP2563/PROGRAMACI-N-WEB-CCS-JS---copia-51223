@@ -1,0 +1,131 @@
+/*
+COMENTARIOS
+*/
+/*
+-----------------CSS--------------------
+
+Es definido como un leguaje de estilos caracterizados por su extensión CSS
+(Cascading Style Sheet), una finalidad necesaria para definir las presentaciónes del doctype
+hacia una diversidad de interacciones de los estilos visuales.
+
+-Definido por su sintaxis:
+.#elemento-HTML{
+          atributo:Valor
+        }
+1º ESTILOS de referencia directa a una etiqueta ⬇️
+
+Sintaxis;
+etiqueta
+{
+    atributo:valor
+}
+
+
+*/
+div {
+    text-align: left; 
+    margin: 0 auto;
+}
+
+/*
+2º ESTILOS DE REFERENCIA DIRECTA SUMATIVA +, CON LA GRAFÍA COMA (,)
+Sintaxis;
+etiqueta1, etiqueta2,..... etiqueta n{
+    atributos:Valor
+                            ⬇️
+*/
+h1,
+h2 {
+    text-align: center;
+    color: slategray;
+    font-weight: bold;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+}
+h4 {
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5,
+h6{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/*
+Resumen de atributo
+ejemplo border
+border-size
+border-style
+border-color
+
+Ejemplo: border: 1px solid black; */
+
+/*
+3º CONEXIONES STANDAR con la aplicación de los atributos, denominados clase
+referenciados en el doctype llamado class & referenciado en la hoja de estilos con un punto (.)
+llamado "selector"
+Sintaxis:
+.nombreReferencia{
+    atributo:Valor
+}
+                                    ⬇️
+*/
+.colorParrafo {
+    color: green;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/*
+4º CONEXIÓN DIRECTA o agujero de gusano, denominado identificador en referencia al doctype definido
+por id="" & referenciado en la hoja de estilo con un hastag #
+Sintaxis:
+#nombreReferencia {
+    atributo:Valor
+}
+*/
+#p1 {
+    background-color: blanchedalmond;
+    font-size: large;
+    font-style: italic;
+}
+
+/*
+5º CONDICIONES SENCILLAS, entendidas como asociaciones de elementos o etiquetas
+Sintaxis:
+etiqueta.nombreReferencia{
+    Atributo:Valor
+
+}
+*/
+p.amarillo {
+    /*busca allí donde haya una etiqueta de <p> y si tiene
+    la clase amarillo, entonces ejecuta la etiqueta*/
+    color: yellow;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/*
+Configuración de tabla
+*/
+table,
+th,
+td {
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid skyblue;
+    /*
+    Css3, el border, llamando a 3 atributos seguidos por un espacio
+    border: tamaño del border
+    border-sytle: solid, dotted...
+    border color: skiblue
+    */
+    border-collapse: collapse;
+    /*
+    border-collapsed: colapsa las dobles líneas de la tabla
+    */
+}
+
+hr {
+    width: 50%;
+}

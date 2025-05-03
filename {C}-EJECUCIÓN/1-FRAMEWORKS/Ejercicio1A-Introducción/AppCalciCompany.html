@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppCalciCompany</title>
+  <!-- Librería de Bootstrap conjunta de js -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Librería de Bootstrap conjunta de js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/Style5.css">
+  <link rel="stylesheet" href="css/herraMiStyle1.css">
+  <script src="js/script5.js"></script>
+</head>
+
+<body>
+  <style>
+    #ess {
+      text-decoration: none;
+      padding-left: 8px;
+    }
+  </style>
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-info fixed-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../Ejercicio1A-Introducción/index2.html"><img src="images/columns-gap.svg" alt=""
+            width="36px" height="36px"><b>
+            iCompany</b>
+        </a>
+        <!-- Desplegables y responsive ⬇️-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> <!-- ⬅️ Hasta aquí el responsive -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Cursos</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="button" class="dropdown-item" id="ess" href="src/indexNav.html" target="_blank"
+                    rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>
+                    HTML 5 </a></li>
+                <li><a class="button" class=dropdown-item" id="ess" href="src/indexNavCSS.html" target="_blank"
+                    rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>
+                    CSS3</a></li>
+                <li><a class="button" class="dropdown-item" id="ess" href="src/index2NavJS.html" target="_blank"
+                    rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg> JS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Áreas</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="button" class="dropdown-item" id="ess" href="download/MEMORIA_retocado.pdf" src=""><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Desarrollo WEB </a></li>
+                <li>
+                <li><a class="button" class="dropdown-item" id="ess" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Browser</a></li>
+                <li>
+                <li><a class="button" class="dropdown-item" id="ess" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>BBDD</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Modalidades</big></button>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li><a class="button" class="dropdown-item" id="ess" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Presencial
+                  </a>
+                </li>
+                <li><a class="button" class="dropdown-item" id="ess" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Online
+                  </a>
+                </li>
+                <li><a class="button" class="dropdown-item" id="ess" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Mixto
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>¿Más información?</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li><a class="button" class="dropdown-item" id="ess"
+                    href="https://forms.office.com/r/S6vrzehvrg?origin=lprLink" target="_blank"
+                    rel="noopener noreferrer">
+                    Déjanos tus datos</a>
+                </li>
+              </ul>
+        </div>
+        <div class="navbar-nav ms auto">
+          <a class="nav-link; text-succees" id="ess" href="src/prueba4.html"><big class="enlace2">Iniciar
+              Sesión</big></a></button>
+        </div>
+        <div><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="margin-top: 10px" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+              <path fill-rule="evenodd"
+                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Inyecto de Bootsrap el elemento princing, tarjeta de venta -->
+    <div class="col" style="text-align:center; margin: auto; width: 18rem; padding-top: 90px;">
+      <div class="card mb-4 rounded-3 shadow-sm border-secondary">
+        <div class="card-header py-3 text-bg-secondary border-secondary">
+          <h3 class="my-0 fw-bold">FINANCIA <br>TU FORMACIÓN</h3>
+        </div>
+        <div class="card-body">
+          <!-- <h2><small class="text-body-secondary fw-light" id="resultado"></small></h2> -->
+          <ul id="resultado" class="list-unstyled mt-3 mb-4">
+            <li>Rápido & seguro</li>
+            <li>¡Podemos ayudarte!</li>
+            <li>Calcula tu cuota mensual ideal</li><br>
+            <a href="Tel:+34654567625" style="padding: 8px; text-decoration: none;"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-telephone-plus-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5" />
+              </svg><span style="padding-left: 4px;" class="enlace2">También puedes llamarnos</span></a>
+          </ul>
+          <button type="button" class="w-100 btn btn-outline-secondary" onclick="calcular()">Calcula tu crédito</button>
+          <button type="reset" style="margin-top: 10px;" class="btn btn-outline-secondary"
+            onclick="location.href='file:///C:/Users/pezgr/OneDrive/PROGRAMACI%C3%93N%20WEB+CCS+JS%20-%20copia%2051223/%7bC%7d-EJECUCI%C3%93N/1-FRAMEWORKS/Ejercicio1A-Introducci%C3%B3n/index2.html'">Cancelar</button>
+        </div>
+      </div>
+      <button class="btn btn-outline-secondary" onclick="descargar()">DESCARGAR</button>
+    </div>
+    <!-- Futer del pricing -->
+    <style>
+      /* body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+      
+      .footer-container {
+        flex: 1;
+      } */
+
+      .footer {
+        /*  padding: 5px; */
+        background-color: #f8f9fa;
+        /* text-align: ; */
+        border-top: 1px solid #dee2e6;
+
+      }
+    </style>
+  </div>
+    <footer style="margin-top: 1em; margin-left: 4em; margin-right: 4em;" class="footer" fixed="bottom" >
+      <div class="footer-container">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <p class="fw-normal">&copy; 2024 Porter Inc. <br> Todos los derechos reservados. <br>
+                C/ Rue del Percebe, 13 <br> 28017 MADRID <br>
+                <img src="images/logoCorreo.png" width="28" height="28"> <a class="enlace2"
+                  href="mailto:manapo@gmail.com"><!-- <span style="padding-left: 6px;"> -->iCompany@iCompany.com</span></a>
+              </p>
+            </li>
+            <li class="ms-3">
+              <p class="fw-normal">Recuerda: </p><br>
+            </li>
+            <li class="ms-2">👉 CTA,<br> 👉 alfa+beta+ganma=(caraterísticas, beneficios y emoción)<br>
+              👉sentido y finalidad
+              </p>
+            </li>
+            <li class="ms-4"><a href="tel:+34688142800"><img src="images/phone_14743 (4).png" alt=""><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-twitter"
+                  viewBox="0 0 16 16"></li></svg></a>
+            <li class="ms-3"><a href="https://twitter.com"><img src="images/social_twitter_bird_2554.png" alt=""
+                  target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" fill="white" class="bi bi-twitter" viewBox="0 0 16 16"></li></svg>
+            <li class="ms-3"><a href="https://instagram.com"><img src="images/instagram_ig_logo_icon_181651.png"
+                  alt=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                  class="bi bi-instagram" viewBox="0 0 16 16" target="_blank" rel="noopener noreferrer"></li></svg>
+            <li class="ms-3"><a href="https://facebook.com"><img src="images/facebook_logo_icon_181652.png" alt=""><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-facebook"
+                  viewBox="0 0 16 16" target="_blank" rel="noopener noreferrer"></li></svg>
+            </a>
+            </a>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

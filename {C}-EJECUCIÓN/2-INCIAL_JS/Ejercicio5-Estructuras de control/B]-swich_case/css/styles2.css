@@ -1,0 +1,26 @@
+/* Uso común del id, versatil tanto en el script como en css en definitiva, 
+cada vez que accedemos a una librería de fuetes de estilo,
+maps, etc. y repercuten en el funcionamiento  de nuestra página,
+son, en definitiva, las famosas API */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+#resultado{
+
+    width: 15.62rem;
+    height: 15rem;
+    background-color: #ffa;
+    margin: 30px auto;
+    padding-top: 48px;
+    border-radius: 0 0 0 30px/45px;
+    box-shadow:
+     inset 0 -40px 40px rgba(0, 0, 0, 0.2),
+     inset 0 35px 10px rgba(0, 0, 0, 0.2),
+     0 5px 6px rgba(0, 0, 0, 0.2);
+     ;
+     font-size: 19px;
+     font-family: 'permanent marker';
+
+}
+
+/* Importaciones de letra */

@@ -1,0 +1,11 @@
+img{
+    width: 25%;
+    margin: 16px;
+    box-shadow: 0ps 2px 4px grey;
+
+}
+ h2,div{
+    text-align: center;
+    color: grey;
+    tex-shadow: 0ps 2px 4px grey;
+ }

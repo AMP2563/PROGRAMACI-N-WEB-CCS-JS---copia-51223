@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <!--
+        Fuentes a las cuales hemos adquirido las imágenes de esta página
+        https://www.flaticon.es/icono-gratis/boton-de-play_375
+    -->
+</head>
+
+<body>
+    <!--
+        Etiquetas
+        video
+        iframe
+        embebed       
+        
+        ATRIBUTO            VALOR           DESCRIPCIÓN
+        src                 ruta            lugar donde apunta y encuentra el archivo
+        poster              img             previsualización de la imagen
+        autoplay            true/false
+        muted                  .            sin sonido
+        loop                   .            bucle
+        control                .            previsualización controles por el navegador
+        frameborder            .            visualización del marco 
+        preload            auto/meta/data
+        wight (altura)      px
+        height (ancho)      px
+
+        POR DEFECTO EN ACORDE AL UX (experiencia de usuarioa), una ejecución directa del mute,
+        tanto en atributo como en carga.
+    -->
+
+    <div style="text-align: center; margin: 0 auto;">
+        <h3>Vídeo y presentación</h3>
+
+        <!--
+            Video inicial NO RECOMENDADO ⬇️
+            
+        -->
+        <video poster="../images/boton-de-play.png" width="25%" height="23%" autoplay="" controls="" frameborder="1">
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+        </video><br>
+        <!--
+            Vdeo actual RECOMENDADO ⬇️
+        -->
+        <video src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" width="33%" height="" autoplay="true"
+            controls="true" frameborder="1" muted="true">
+
+        </video><br>
+        <!--
+         Vídeo incrustado de RRSS
+        -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IiSjPcRWjYA?si=rHsSyGmbWUyUG8aF"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+         web-share" allowfullscreen>
+        </iframe><br>
+        <iframe style="width:600;height:300;"frameborder= 1px; type="text/html"
+            src="https://www.dailymotion.com/embed/video/x30rrw?autoplay=1" width="600" height="300" allowfullscreen
+            title="Dailymotion Video Player" allow="autoplay">
+        </iframe><br>
+        <!--
+            Inyectamos elementos como objetos
+            Definido por su sintaxis:
+            <object></objct>
+            el src, como atributo, aqué es sustituido por data
+            así mismo podremos acceder a otros atributos desde syle
+        -->
+
+        <object data="../Data/Teoria HTML_&_CSS+3.docx.pdf" type="" width="675" height="790">
+        </object><br>
+<!--
+    Conexiones a One Drive hacer una práctica
+-->
+<br><iframe src="https://1drv.ms/x/s!AvaQlD7PMl-rhxqrFjUTSq8mAfuL?e=4h7mZU" width="100%" height="550" type="0"></iframe>
+<!-- 
+    OJO para compartir cualquier documento dentro del One Drive, una vez logueado, es necesario hacerlo mediante el enlace que
+    la propia aplicación facilita, no vale con el que aparece en el navegador.
+ -->
+        
+    </div>
+</body>
+
+</html>

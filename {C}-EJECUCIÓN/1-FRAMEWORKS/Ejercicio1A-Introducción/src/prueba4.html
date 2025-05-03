@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio de Sesión</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Librería de Bootsrap conjunta con JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Formulario de inicio de sesión -->
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <button type="button" class="btn btn-outline-secondary" onclick="verificarGenero()">Iniciar Sesión</button>
+                <button type="reset" class="btn btn-outline-secondary" onclick="location.href='file:///C:/Users/pezgr/OneDrive/PROGRAMACI%C3%93N%20WEB+CCS+JS%20-%20copia%2051223/%7bC%7d-EJECUCI%C3%93N/1-FRAMEWORKS/Ejercicio1A-Introducci%C3%B3n/index2.html'">Cancelar</button>
+            </form>
+            </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script>
+    function verificarGenero() {
+        // Obtener el valor del nombre desde el formulario
+        var nombre = document.getElementById("nombre").value;
+
+        // Comprobar si el nombre es masculino o femenino
+        var genero;
+        if (nombre.toLowerCase().endsWith("o")) {
+            genero = "masculino";
+        } else if (nombre.toLowerCase().endsWith("a") || nombre.toLowerCase().includes("maría")) {
+            genero = "femenino";
+        } else {
+            genero = "desconocido";
+        }
+
+        // Convertir la primera letra del nombre a mayúsculas
+        var nombreConMayuscula = nombre.charAt(0).toUpperCase() + nombre.slice(1);
+
+        // Mostrar el saludo en la pantalla
+        var mensaje;
+        if (genero === "masculino") {
+            mensaje = "¡Bienvenido, " + nombreConMayuscula + "!";
+        } else if (genero === "femenino") {
+            mensaje = "¡Bienvenida, " + nombreConMayuscula + "!";
+        } else {
+            mensaje = "¡Hola, " + nombreConMayuscula + "!";
+        }
+
+        // Mostrar el mensaje 
+        document.getElementById("mensajeBienvenida").innerText = mensaje;
+
+        // Redirección
+        setTimeout(function() {
+            window.location.href="../index2.html";
+        }, 2000);
+    }
+</script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Mensaje de bienvenida -->
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div id="mensajeBienvenida" class="alert alert-info" role="alert"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

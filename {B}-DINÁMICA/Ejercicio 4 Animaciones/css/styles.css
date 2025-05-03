@@ -1,0 +1,64 @@
+/* ------ANIMACIONES--------
+
+Establecemos una gran diferencia de estados de los elementos de forma dinámica
+no estática medidos en tiempo y en puntos de trayectoria, entendidos como secuencias.
+Atributos que definen las animaciones:
+    1. animation-name (nombre de referencia de llamada a la estructura animada)
+    2. animation-duration (tiempo, definido en segundos o milisegudos)
+    3. animation-itineration-count (cómo se produce su repetición)
+    Sintaxis:
+    @keyframe -definido como estructura de controlador- que permite definir las secuencias,
+    es decir, las trayectorias de la ejecución:
+    @keyframes nombre de la animación-animation-name{
+        
+    0%{
+        lenguaje css definido al incio
+    }
+    25%{
+        leguaje css definido al 2/4 de la ejecución
+    }
+    50%{
+        leguaje css definido al 3/4 de la ejecución
+    }
+    75%{
+        leguaje css definido al 4/4 de la ejecución
+    }
+*/
+#movimiento{
+    width: 10em   ;
+    height: 10em ;
+    background-color: skyblue;
+    font-size: 1em;
+    text-align: center;
+    animation-name: miAnimacion;
+    animation-duration: 10s;
+    -moz-animation-direction: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes miAnimacion {
+    0%{
+        background-color: aquamarine;
+        font-size: 1.5em;
+
+    }
+    25%{
+        background-color: orange;
+        font-size: 4em;
+        width: 15em;
+        border: 0.1em solid aquamarine;
+        transform: translateX(400px)
+    }
+    50%{
+        background-color: orange;
+        font-size: 1em;
+        width: 10em;
+        transform: translateX(400px)
+    }
+    75%{
+        background-color: olive;
+        font-size: 1.5m;
+        width: 10em;
+        transform: translateY(400px);
+        border-radius: 1em
+    }
+}

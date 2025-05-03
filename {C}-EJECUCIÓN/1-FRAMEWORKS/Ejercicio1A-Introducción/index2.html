@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iCompany (docencia)</title>
+  <link rel="shortcut icon" href="Images/columns-gap.svg" type="image/x-icon">
+  <!-- Librería de Bootstrap conjunta con CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Librería de Bootsrap conjunta con JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/herraMiStyle1.css">
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+
+<body>
+  <div class="container">
+    <!-- Símbolos de la librería de Jumbotron -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+      </symbol>
+    </svg>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    <!-- Símbolos SVG de la librería de Jumbotron -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+        </path>
+      </symbol>
+      <symbol id="arrow-right-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+      </symbol>
+      <symbol id="check2-circle" viewBox="0 0 16 16">
+        <path
+          d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+        <path
+          d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+      </symbol>
+    </svg>
+    <div class="container my-5">
+      <div class="position-relative p-5 text-center text-muted bg-body">
+        <img src="src/142-1423886_html5-css3-js-html-css-javascript.png" alt="" class="img-fluid">
+      </div>
+    </div>
+    <!-- BARRA DE NAVEGACIÓN --> <!-- colrow -->
+    <style>
+      #ess {
+        text-decoration: none;
+        padding-left: 8px;
+      }
+    </style>
+    <nav class="navbar navbar-expand-md navbar-info fixed-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../Ejercicio1A-Introducción/index2.html"><img src="images/columns-gap.svg" alt=""
+            width="36px" height="36px"><b>
+            iCompany</b>
+        </a>
+        <!-- Desplegables y responsive ⬇️-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> <!-- ⬅️ Hasta aquí el responsive -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Cursos</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="button" class="dropdown-item" id="ess" href="src/indexNav.html" target="_blank"
+                    rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>
+                    HTML 5 </a></li>
+                <li><a class="button" class=dropdown-item" id="ess" href="src/indexNavCSS.html" target="_blank"
+                    rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>
+                    CSS3</a></li>
+                <li><a class="button" class="dropdown-item" id="ess" href="src/index2NavJS.html" target="_blank"
+                    rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg> JS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Áreas</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="button" class="dropdown-item" id="ess" href="download/MEMORIA_retocado.pdf" src=""><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Desarrollo WEB </a></li>
+                <li>
+                <li><a class="button" class="dropdown-item" id="ess" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Browser</a></li>
+                <li>
+                <li><a class="button" class="dropdown-item" id="ess" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>BBDD</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Modalidades</big></button>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li><a class="button" class="dropdown-item" id="ess" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Presencial
+                  </a>
+                </li>
+                <li><a class="button" class="dropdown-item" id="ess" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Online
+                  </a>
+                </li>
+                <li><a class="button" class="dropdown-item" id="ess" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Mixto
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" href="#"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Consulta nuestro blog</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li><a class="button" class="dropdown-item" id="ess"
+                    href="https://icompany-tpm-practicas.blogspot.com" target="_blank" rel="noopener noreferrer">
+                    BLOG</a>
+                </li>
+              </ul>
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>¿Más información?</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li><a class="button" class="dropdown-item" id="ess"
+                    href="https://forms.office.com/r/S6vrzehvrg?origin=lprLink" target="_blank"
+                    rel="noopener noreferrer">
+                    Déjanos tus datos</a>
+                </li>
+              </ul>
+          </ul>
+        </div>
+        <div class="navbar-nav ms auto">
+          <a class="nav-link; text-succees" id="ess" href="src/prueba4.html"><big class="enlace2">Iniciar
+              Sesión</big></a></button>
+        </div>
+        <div><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="margin-top: 10px" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+              <path fill-rule="evenodd"
+                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!--CARRUSEL-->
+    <div class="container">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/id/0/800/400" class="d-block w-100" alt="">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <div style="text-align: center;">
+                  <h1 class="container">INTRODUCCIÓN HTML5</h1>
+                  <p class="opacity-90"><b>Es elcomponente más básico de la Web. Define
+                      el significado y la estructura del contenido web</p>
+                  <p><a class="btn btn-outline-warning" href="AppCosteCursoiCom.html"><strong
+                        style="color: rgb(10, 50, 21);"><b>Consulta nuestras
+                          tarifas</a></p></b></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/9/800/400" class="d-block w-100" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>CSS3</h1>
+                <p>El CSS es un lenguaje informático que especifica cómo se presentan
+                  los doc</span>umentos a los usuarios</p>
+                <p><a class="btn btn-outline-warning" href="AppCalciCompany.html"><b><strong
+                        style="color: rgb(10, 50, 21);">Financiación a tu
+                        medida</strong></b></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/7/800/400" class="d-block w-100" alt="">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <div style="text-align: center;">
+                  <h1 class="container">Aquí unas fotos de los cursos y las aulas</h1>
+                  <p>Algún contenido de marcador de posición representativo para la tercera diapositiva de este carrusel
+                  </p>
+                  <p><a class="btn btn-outline-warning" href="src/indexNav.html"><b><strong
+                          style="color: rgb(10, 50, 21);">Galería del
+                          navegador</b></strong>
+                </div></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- 
+        ¡OJO! hay que treer las clase "marketing" de bootstraps, sino no, no funciona su
+        proporcionalidad
+    -->
+
+      <div class="marketing">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="src/399px-Jabba_the_Hutt.jpg" alt="" class="bd-placeholder-img rounded-circle" width="150"
+              height="132">
+            <alt="" class="bd-placeholder-img rounded-circle" width="140" height="120"">
+                <h2 class=" fw-normal">Jabba el Hutt</h2>
+              <p>Contrabandista simpático de LGdlG
+              </p>
+              <p><a class="btn btn-outline-secondary" href="https://es.wikipedia.org/wiki/Jabba_el_Hutt"> &#43;
+                  detalles</a>
+              </p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="src/icons8-javascript (3).svg" alt="" class="bd-placeholder-img rounded-circle" width="140"
+              height="133">
+            <h2 class="fw-normal">Otro logo de JAVA</h2>
+            <p>Otro ejemplo de logo</p>
+            <p><a class="btn btn-outline-secondary" href="src/index2NavJS.html">+ detalles</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="images/file_html_14699.png" alt="" class="bd-placeholder-img rounded-circle" width="140"
+              height="140">
+            <h2 class="fw-normal">HTML5</h2>
+            <p>Logo redondo</p>
+            <p><a class="btn btn-outline-secondary" href="src/indexNav.html">+ detalles</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div>
+      <!-- Footer o pie de página -->
+      <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          margin: 0;
+        }
+
+        .footer-container {
+          flex: 1;
+        }
+
+        .footer {
+          padding: 10px;
+          background-color: #f8f9fa;
+          /* text-align: ; */
+          border-top: 1px solid #dee2e6;
+
+        }
+      </style>
+      <footer class="footer" fixed="bottom">
+        <div class="footer-container">
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+            <p class="fw-normal">&copy; 2024 Porter Inc. <br> Todos los derechos reservados. <br>
+              C/ Rue del Percebe, 13 <br> 28017 MADRID <br>
+              <img src="images/logoCorreo.png" width="28" height="28"> <a class="enlace2"
+                href="mailto:manapo@gmail.com"><!-- <span style="padding-left: 6px;"> -->iCompany@iCompany.com</span></a>
+            </p>
+            <p class="fw-normal">Recuerda: <br>
+              👉 CTA,<br> 👉 alfa+beta+ganma=(caraterísticas, beneficios y emoción)<br> 👉sentido y finalidad
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a href="tel:+34688142800"><img src="images/phone_14743 (4).png" alt=""><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-twitter"
+                    viewBox="0 0 16 16"></li></svg></a>
+              <li class="ms-3"><a href="https://twitter.com"><img src="images/social_twitter_bird_2554.png" alt=""
+                    target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" fill="white" class="bi bi-twitter" viewBox="0 0 16 16"></li></svg>
+              <li class="ms-3"><a href="https://instagram.com"><img src="images/instagram_ig_logo_icon_181651.png"
+                    alt=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                    class="bi bi-instagram" viewBox="0 0 16 16" target="_blank" rel="noopener noreferrer"></li></svg>
+              <li class="ms-3"><a href="https://facebook.com"><img src="images/facebook_logo_icon_181652.png"
+                    alt=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                    class="bi bi-facebook" viewBox="0 0 16 16" target="_blank" rel="noopener noreferrer"></li></svg>
+              </a>
+              </a> 
+              </a>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  </div>
+</body>
+
+</html>

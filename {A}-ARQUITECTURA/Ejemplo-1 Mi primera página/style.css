@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(221, 221, 17);
+
+}
+.justificado{
+    text-align: justify;
+    font-size: medium;
+    font-style: italic;
+    color: rgb(54, 100, 8);
+}
+
+div{
+    border-style: dotted solid;
+    border-color: blue;
+    background-color: aquamarine;
+    margin: 0px 30px 0px 30px;
+    text-align: justify; 
+    padding: 20px 10px 20px 10px;
+    font-family: Tahoma, sans-serif;
+}
+#h1{
+    border-style: dashed solid;
+    margin: 015px auto;
+    text-align: justify; 
+    /* width: 95%; */ 
+    background-color: bisque;
+    padding: 30px 50px 30px ;
+    font-family: Tahoma, sans-serif;
+}
+.border{
+    /* Keyword values */
+border-bottom-style: none;
+border-bottom-style: hidden;
+border-bottom-style: dotted;
+border-bottom-style: dashed;
+border-bottom-style: solid;
+border-bottom-style: double;
+border-bottom-style: groove;
+border-bottom-style: ridge;
+border-bottom-style: inset;
+border-bottom-style: outset;
+
+/* Global values */
+border-bottom-style: inherit;
+border-bottom-style: initial;
+border-bottom-style: revert;
+border-bottom-style: revert-layer;
+border-bottom-style: unset;
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dooble for e if</title>
+    <!-- Libreria de Bootstrap conjunta de css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Libreria de Bootstrap conjunta de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- inyecto mi script -->
+    <script src="js/script7.js"></script>
+    <link rel="stylesheet" href="css/style7.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Anidaciones: <code>for e if</code></h2>
+        <h3>Número divisibles entre sí del 1-20</h3>
+        <!-- 
+            1º Recorrido de todos los números
+            2º Evaluación de cada número
+                2.1 Comparo el número por todos aquellos que 
+                pueda ser divisible
+                2.2 Buscar aquellos que su resto es 0
+         -->
+    </div>
+    <script>
+        for (var numero = 0; numero <= 20; numero++) { //Estaríamos en el punto 1º
+            document.write('Probando nº' + numero + '<br>');
+            for (var divisible = 1; divisible <= numero; divisible++) { //Estamos en el punto 2.1
+                if (numero % divisible == 0) {
+                    document.write('es divisible por: ' + divisible + '<br>')//Estamos en 2.2
+                }
+            }
+            document.write('.....................' + '<br>');
+
+        }
+    </script>
+</body>
+
+</html>

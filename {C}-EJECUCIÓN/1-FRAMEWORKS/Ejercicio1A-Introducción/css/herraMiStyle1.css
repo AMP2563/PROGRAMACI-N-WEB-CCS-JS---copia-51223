@@ -1,0 +1,84 @@
+/* BOTÓN ESTANDAR SIN HOOBER */
+
+ .button2 {
+    margin-top: 1em;
+    background-color: rgba(36, 184, 36, 0.979);   /*- Fondo del botón */
+    border-radius: 7px; /* ---------------------------- Redondeo de las esquinas */
+    border-style: groove; /* -------------------------- Estilo del borde (puntos, guiones, doble, etc.)*/
+    border-width: 3px; /* ----------------------------- Grosor del borde */
+    border-color: rgba(9, 243, 9, 0.662); /* -------- Color del borde */ 
+    padding: 0.7em 0.5em; /* -------------------------- Margen entre el texto y el borde del botón */
+    font-size: large; /* ------------------------------ Tamaño de la fuente */
+    font-family: 'Segoe UI', Tahoma, ; /* ------------- Tipo de la fuente */
+    color: white; /* -------------------------------- Color de la fuente */
+    text-decoration: none; /* ------------------------- Quita la ralla del link */
+    
+} 
+
+/* CAMBIO DE COLORES, CON CSS, DEL TEXTO Y FONDO DE BOOTSRAP */
+
+/* .text-dark-custom {
+    color: #333 !important; /* Cambia el color del texto a oscuro 
+  }*/
+
+ /*  .bg-light-custom {
+    background-color: #f8f9fa !important; /* Cambia el color de fondo a claro 
+  }  */
+
+  /* BARRA DE NAVEGACIÓN CON CSS PARA CAMBIAR LOS COLORES DE LOS BOTONES Y DE LA BARRA */
+  
+   /*  .navbar-custom {
+      background-color: #95ff0075;
+    } */
+
+   /*  .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #275b04;
+    } */
+
+   /*  .navbar-custom .navbar-toggler-icon {
+      background-color: #d67f7f;
+    } */
+  
+/* .mgboton {
+    margin-bottom: 4em !important; 
+} */
+
+
+/* Hoober para subrayar link */
+
+/* Estilo predeterminado del enlace */
+.enlace {
+  text-decoration: none; /* Eliminar subrayado predeterminado */
+  color: #0695f4; /* Color del texto */
+  transition: text-decoration 0.3s; /* Agregar transición para un efecto suave */
+}
+/* Efecto hover para subrayar el enlace */
+.enlace:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón sobre el enlace */
+}
+
+
+/* Otro subrayado que aparece de izquierda a derecha */
+/* Estilo predeterminado del enlace */
+.enlace2 {
+  position: relative; /* Establecer posición relativa para el contenedor */
+  text-decoration: none; /* Eliminar subrayado predeterminado */
+  color: #0695f4; /* Color del texto */
+}
+
+/* Pseudo-elemento para crear el subrayado */
+.enlace2::before {
+  content: ''; /* Contenido vacío necesario para el pseudo-elemento */
+  position: absolute; /* Establecer posición absoluta con respecto al contenedor */
+  width: 0; /* Inicialmente, el ancho es cero para que no sea visible */
+  height: 2px; /* Altura del subrayado */
+  background-color: #0695f4; /* Color del subrayado */
+  bottom: 0; /* Alinear el subrayado en la parte inferior del contenedor */
+  transition: width 0.3s; /* Agregar transición para un efecto suave en el ancho */
+}
+
+/* Efecto hover para aumentar el ancho del subrayado */
+.enlace2:hover::before {
+  width: 100%; /* Al pasar el ratón, aumentar el ancho al 100% */
+}

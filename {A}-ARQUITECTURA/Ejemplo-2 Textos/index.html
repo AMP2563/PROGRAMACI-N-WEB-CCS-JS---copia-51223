@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AQUI IRÍA EL FABICOM-->
+    <title>Estructura de párrafos: LA VIDA</title>
+</head>
+
+<body>
+    <!--
+        LAS ESTIQUETAS
+        a) visuales: (<marquee>(OBSOLETA), <address>)
+        b) referencias: (<encabezados>, <blockquote>)
+        c) contexto: (<p>, <cabeceras>)
+        d) conexión: (<enlace>, <relación>)
+        e) arquitectura: (<div>, <span>)
+    -->
+    <!--
+        Como ejemplo de análisis de los ATRIBUTOS utilizaremos
+        la etiqueta contenedora <marquee>.
+        Define caracteres en movimiento dentro de sus límites. Esta característica ya no se recomienda.
+        Por defecto irá de izquierda a derecha, se puede cambiar el comportamiento
+        de la siguiente manera:
+            valor(behavior)=slide: izquierda a derecha un recorrido
+            valor(behavior)=alternate: irá de un lado a otro.
+            valor(direction)=arriba o abajo
+            width: ancho, 
+            height: alto
+            se puede meter la etiqueta <style>
+            Sintáxis de los atributos:
+            nombre="valor"
+    -->
+    <marquee><img src="image/home2.png" alt=""></marquee>
+
+    <marquee behavior="alternate" direction="up" width=" 100px" height="164px">Este texto se moverá como le de la gana
+    </marquee>
+
+    <marquee behavior="slide" width="100%" height="30%">Este también</marquee>
+
+    <h3><!--Ejemplo de etiqueta para poner un titular, Times-->
+        Reflexiones
+    </h3>
+
+    <h3>Más reflexiones</h3><!--Esta etiqueta justifica el titular añade un QL-->
+
+    <p><!--Ejemplo de etiqueta de párrafo, por defecto se representa en Times y en BI-->
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, vitae!
+        Expedita dolores aperiam aliquam laborum sapiente ab molestias similique tempora.
+        Nihil, dolor? At qui perferendis quae magnam ipsum soluta fuga.
+        Repudiandae dolor numquam sapiente, porro dolore in quis rem cum!
+        Similique deleniti ipsam repudiandae! Atque eos iure laudantium natus rerum?
+        Odit nam perferendis dolor aliquid eaque, unde non laborum ad.
+        Voluptatem voluptatibus error expedita odit explicabo fuga voluptate? Sed, repudiandae.
+        Dignissimos, possimus labore. Fuga laboriosam, illum a tempora minus animi.
+        Esse mollitia commodi, animi doloremque vero autem corporis! Iusto, minima.
+        Quas perferendis officia sint earum sapiente aliquid id, dolorem eum.
+    </p>
+
+    <blockquote style="text-align: justify;"><!--Etiqueta de párrafo, deja una sangría izquierda, NO justifica el párrafo por defecto y añade
+         un QL con el bloque de arriba, por defecto Times, BI-->
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Illo cum odio deleniti, omnis magnam veniam autem.
+        Nihil totam soluta nulla quam sed assumenda ipsa!
+        Quasi vel ipsam repudiandae placeat tempore sapiente voluptate.
+        Perspiciatis odio aliquam optio deserunt enim earum tempora!
+        Eius inventore officia porro delectus, repudiandae fugiat natus!
+        Ullam odit nemo, eveniet quae autem excepturi quia?
+        Omnis illum accusantium excepturi ipsum voluptatum nulla laboriosam?
+        Quos distinctio tempora accusamus illum? Incidunt, libero officia!
+        Architecto tempora laudantium iure natus? Tempore, ipsum deserunt.
+    </blockquote>
+
+    <hr width="90%"><!--Etiqueta de línea orizontal, (abre y cierra)
+         admite valores y atributos que definen su ancho, grosor, corlor y posición, QL-->
+
+    <address style="font-size: small; text-align: center;"><!--Etiqueta para poner la dirección, "estilable" Times cursiva, QL-->
+        Virgen del Lluc, 28 28027
+    </address>
+
+    <hr width="90%" color="red" size="10px">
+
+    <p align="right" style="font-family: Roboto, sans-serif;">Presentado por A7OM8ZP7O</p>
+    <!--Etiqueta de parrafo para la firma, valor: aling= atributo: (entre comillas)"right" QL-->
+
+
+    <p align="center"><!--Etiqueta de enlaces a otrás páginas o directorios, Sintáxis:
+        <a href=""><a/a>
+        -->
+        <a href="http://www.google.es">Ir a google</a><br/>
+        <a href="../Ejemplo-1 Mi primera página/index.html">Ir a mi premera página</a>
+    </p>
+
+    <marquee>Este texto se mueve de derecha a izquierda</marquee><hr>
+
+    <marquee direction="up" height="100px">Este texto se mueve de abajo hacia arriba</marquee><hr>
+
+    <marquee direction="down" width="450px" height="300px" behavior="alternate" style="border:solid">
+        <marquee behavior="alternate">
+            Este texto rebotará dentro de la marquesina.
+        </marquee>
+    </marquee>
+
+    <p>El precio original era: <del>100€</del>, pero ahora es de 80€. Aquí utilizamos la etiqueta "del" y "/del"
+    para tachar lo que que queremos</p>
+    <p>La etiqueta "s" y "/s" <s> es para tachar texto que ya no es actual, como en el ejemplo anterior.</p>
+</body>
+
+</html>

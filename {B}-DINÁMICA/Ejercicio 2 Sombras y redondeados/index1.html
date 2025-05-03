@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras: elementos y textos</title>
+</head>
+
+<body>
+    <!--ámbito de HTML-->
+
+    <script>
+
+    </script>
+    <style>
+        /* Estamos en el ámbito de css, entre la etiqueta contenedora style */
+        div {
+            background-color: blanchedalmond;
+            padding: 32px;
+            margin: 36px;
+            border-radius: 8px;
+
+        }
+
+        #sombraCuadro {
+            /* 
+            sombra de elemento, definido por su sintaxis:
+            atributo: box-shadow
+            valores; x y z color */
+
+            /* margin: 10em 10em 10em 10em; */
+            box-shadow: 10px 10px 10px rgb(220, 220, 220),
+                20px 20px 10px rgb(225, 221, 221),
+                30px 30px 10px rgb(246, 244, 244);
+        }
+
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 1px 1px 2px black,
+                0.16px 0.16px 0.16px #bbb,
+                0.16px 0.16px 0.32px #ddd
+        }
+
+        .sombra2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 36px;
+            text-shadow: 1px 1px 2px black,
+                0.16px 0.16px 0.16px #bbb,
+                0.16px 0.16px 0.20px #ddd;
+            color: white;
+            background-color: white;
+
+
+        }
+    </style>
+    <div id="sombraCuadro">
+        <h2>SOMBRA CUADRO</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, illum!
+            Error qui assumenda quod natus consequuntur vitae repudiandae id sint!
+            Dicta quam facilis modi consequatur voluptatibus officia veritatis deserunt natus.
+            Laborum, fuga similique impedit minus vel consequatur facere possimus nesciunt.
+            Voluptas magnam repellendus sit harum fuga, alias voluptatum ea repudiandae?
+            Vitae aliquid itaque asperiores tempore fugiat dolorum sed nesciunt adipisci.
+            Sapiente eum nostrum dolorem officia, earum id distinctio tenetur suscipit.
+            Perferendis neque explicabo ipsa tempore quas velit sit voluptatum ducimus.
+            Quia porro magni quaerat, voluptatum fugiat quod eos voluptatibus laborum.
+            Reprehenderit nobis earum incidunt aut doloribus aliquid debitis distinctio provident.
+        </p>
+    </div>
+    <div id="sombraCuadro">
+        <h2>SOMBRA TEXTO</h2>
+        <p class="sombra2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, illum!
+            Error qui assumenda quod natus consequuntur vitae repudiandae id sint!
+            Dicta quam facilis modi consequatur voluptatibus officia veritatis deserunt natus.
+            Laborum, fuga similique impedit minus vel consequatur facere possimus nesciunt.
+            Voluptas magnam repellendus sit harum fuga, alias voluptatum ea repudiandae?
+            Vitae aliquid itaque asperiores tempore fugiat dolorum sed nesciunt adipisci.
+            Sapiente eum nostrum dolorem officia, earum id distinctio tenetur suscipit.
+            Perferendis neque explicabo ipsa tempore quas velit sit voluptatum ducimus.
+            Quia porro magni quaerat, voluptatum fugiat quod eos voluptatibus laborum.
+            Reprehenderit nobis earum incidunt aut doloribus aliquid debitis distinctio provident.
+        </p>
+    </div>
+</body>
+
+</html>

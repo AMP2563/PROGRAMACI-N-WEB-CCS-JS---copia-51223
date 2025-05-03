@@ -1,0 +1,103 @@
+.marquee-container {
+        overflow: hidden;
+    white-space: nowrap;
+    /*height: 100%; /*Ajusta la altura según las necesidades para el desplazamiento vertical */
+}
+
+.marquee-text {
+    animation: marqueeAnimation 10s linear infinite;
+}
+/* DE UN LADO A OTRO */
+ @keyframes marqueeAnimation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+} 
+/* PARA QUE REBOTE 
+@keyframes marqueeAnimation {
+    0%, 100% { transform: translateX(0%); }
+    50% { transform: translateX(100%); }
+}
+*/
+/* DE ARRIBA A ABAJO
+@keyframes marqueeAnimation {
+    0%, 100% { transform: translateY(0%); }
+    50% { transform: translateY(-100%); }
+}
+*/
+/* EN OBLICUO (LAS LETRAS)
+@keyframes marqueeAnimation {
+    0%, 100% { transform: skewX(0deg) translateX(0%); }
+    50% { transform: skewX(45deg) translateX(100%); }
+}
+*/
+/* EN OBLICUO EN UNA PORCIÓN DE PANTALLA */
+/* @keyframes marqueeAnimation {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-100vw, 100vh); } 
+}
+*/
+
+/*  Se puede usar este archivo para manipular dinámicamente el texto si es necesario.
+ Por ejemplo, se cambiar el texto en respuesta a eventos o datos externos.
+ Esto es un contenedor para futuras expansiones.
+ */
+ /* CSS para crear un contenedor que oculta el desbordamiento y evita
+  el retorno de línea (white-space: nowrap). El texto se desplaza horizontalmente
+  mediante una animación de CSS (@keyframes).
+ Puedes ajustar la duración y el estilo según tus necesidades.
+  Además, se puede usar JavaScript para manipular dinámicamente el texto si es necesario. */
+
+  /* La propiedad -overflow- en CSS controla cómo se maneja el contenido que desborda el área de un elemento.
+   Puede tener varios valores, y en el ejemplo anterior se utiliza overflow: hidden;. 
+   Aquí hay una breve explicación:
+
+  -overflow: hidden;: Oculta el contenido que desborda el área del contenedor. 
+  En el contexto del ejemplo, se utiliza para ocultar el contenido que se desplazaría fuera del área visible
+  del contenedor.
+
+  Otros valores comunes de la propiedad overflow son:
+  -overflow: visible;: Permite que el contenido desborde el área del contenedor y sea visible fuera de él.
+   Esto puede resultar en que el contenido sobresalga visualmente de su contenedor.
+  
+  -overflow: scroll;: Agrega barras de desplazamiento (horizontal y/o vertical) al contenedor,
+   permitiendo al usuario desplazarse para ver el contenido oculto.
+  
+  -overflow: auto;: Similar a scroll, agrega barras de desplazamiento solo cuando es necesario.
+   Si no hay desbordamiento, no aparecerán barras de desplazamiento.
+  
+  Estos son solo algunos de los valores básicos de la propiedad overflow.
+   Puedes elegir el valor que mejor se adapte a tus necesidades dependiendo
+   del comportamiento que desees lograr para el contenido que desborda un elemento.
+   En el ejemplo del "marquee" alternativo, overflow: hidden; se utiliza para ocultar
+   el contenido que se desplaza fuera del área del contenedor.
+------------  
+   La propiedad -white-space- se utiliza para controlar cómo se maneja el espacio en blanco dentro
+   de un elemento. Al establecerlo en nowrap, evitas que el texto se divida en varias líneas,
+   permitiendo así el desplazamiento horizontal continuo.
+------------
+La propiedad -animation- en CSS se utiliza para aplicar una animación a un elemento.
+ En el código empleado arriba, -animation: marqueeAnimation 10s linear infinite;-
+ se utiliza para aplicar una animación llamada marqueeAnimation al elemento con la clase .marquee-text. 
+ Aquí hay una breve explicación de los valores utilizados:
+
+marqueeAnimation: Es el nombre de la animación. Deberías tener definida esta animación utilizando
+-@keyframes- en tu hoja de estilo.
+
+10s: Es la duración de la animación. En este caso, la animación tomará 10 segundos para completarse.
+
+linear: Es la función de temporización utilizada para la animación. -linear- significa que la animación
+se ejecutará a una velocidad constante a lo largo de su duración. 
+Otras opciones incluyen -ease- (inicio lento y final rápido), -ease-in- (inicio lento),
+-ease-out- (final lento), -ease-in-out- (inicio y final lentos) y más.
+
+infinite: Indica que la animación se repetirá infinitamente.
+
+En resumen, -animation: marqueeAnimation 10s linear infinite;-
+dice que se aplicará la animación llamada -marqueeAnimation- al elemento durante 10 segundos,
+con una función de temporización lineal (velocidad constante), y se repetirá infinitamente.
+
+El bloque @keyframes marqueeAnimation que debería ir junto con esto especificaría
+los detalles de la animación, como la posición inicial y final del desplazamiento.
+   */
+
+

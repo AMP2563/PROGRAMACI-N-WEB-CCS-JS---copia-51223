@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICompany css3</title>
+  <link rel="shortcut icon" href="../images/columns-gap.svg" type="image/x-icon">
+  <!-- Librería de Bootstrap conjunta con CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Librería de Bootsrap conjunta con JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/herraMiStyle1.css">
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+ <div class="container my-5">
+    <style>
+      #ess {
+        text-decoration: none;
+        padding-left: 8px;
+      }
+    </style>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-info fixed-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index2.html"><img src="../images/columns-gap.svg" alt="" width="36px" height="36px"><b>
+            iCompany</b>
+        </a></button>
+        <!-- Desplegables -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Cursos</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="button" class="dropdown-item" id="ess" href="../src/indexNav.html"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>
+                    HTML
+                    5 </a></li>
+                <li><a class="button" class=dropdown-item" id="ess" href="../index2.html"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>
+                    CSS3</a></li>
+                <li><a class="button" class="dropdown-item" id="ess"
+                    href="../src/index2NavJS.html"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg> JS</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Áreas</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="button" class="dropdown-item" id="ess" href="download/MEMORIA_retocado.pdf"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Desarrollo WEB </a></li>
+               <li><a class="button" class="dropdown-item" id="ess" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Browser</a></li>
+                
+                <li><a class="button" class="dropdown-item" id="ess" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>BBDD</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>Modalidades</big></button>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li><a class="button" class="dropdown-item" id="ess" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Presencial
+                  </a>
+                </li>
+                <li><a class="button" class="dropdown-item" id="ess" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Online
+                  </a>
+                </li>
+                <li><a class="button" class="dropdown-item" id="ess" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                      <path
+                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" />
+                    </svg>Mixto
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mb-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <button type="button" class="btn btn-outline-secondary"><big>¿Más información?</big></button>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li><a class="button" class="dropdown-item" id="ess"
+                    href="https://forms.office.com/r/S6vrzehvrg?origin=lprLink">
+                    Déjanos tus datos</a>
+                </li>
+              </ul>
+            </li>
+        </div>
+        <div class="navbar-nav">
+          <a class="button" class="dropdown-item" id="ess" href="#"><big class="enlace2">Iniciar Sesión</big></a></button>
+        </div>
+        <div><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="margin-top: 10px" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+              <path fill-rule="evenodd"
+                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    
+      <style>
+        .card-container {
+          display: flex;
+          justify-content: space-between;
+          margin-left: 2em;
+        }
+
+        .card {
+          min-width: 13rem;
+          max-width: 25rem;
+          margin-right: 10px;
+
+        }
+      </style>
+ </div>
+      <div class="card-container" style="margin-top: 6em;">
+        <div class="card">
+          <img src="../images/css-introduction.png" class="card-img-top" alt="..." height="30%">
+          <div class="card-body">
+            <h5 class="card-title"><strong><b>CSS (el origen)</b></strong></h5>
+            <p class="card-text">CSS son las siglas en inglés de Cascading Style Sheets, que significa <i><b>«hojas de
+                  esilo en cascada»</b></i>. Es un lenguaje que se usa para estilizar elementos escritos en un lenguaje
+              de marcado como <code>HTML</code>. <br>
+              CSS fue desarrollado por <b>W3C (World Wide Web Consortium)</b> en 1996 por una razón muy sencilla. HTML
+              no fue diseñado para tener etiquetas que ayuden a formatear la página: está hecho solo para escribir el
+              marcado para el sitio. <br>
+            </p>
+            <a href="#" class="btn btn-outline-secondary">Al código</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 38px;">
+          <img src="../images/imagesCCS.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong><b>CSS</b></strong></h5>
+            <p class="card-text">Se incluyeron etiquetas como <font> en HTML versión 3.2, y esto les causó muchos
+                problemas a los desarrolladores. <br>Dado que los sitios web tenían diferentes fuentes, fondos de
+                colores y estilos, el proceso de reescribir el código fue largo, doloroso y costoso. <br> Por lo tanto,
+                CSS fue creado por W3C para resolver este problema. </p>
+            <a href="#" class="btn btn-outline-secondary">Al vídeo</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 88px; margin-right: 2em;">
+          <img src="../images/htmlycss.png" class="card-img-top" alt="..." height="220px">
+          <div class="card-body">
+            <h5 class="card-title"><strong><b>CSS3</b></strong></h5>
+            <p class="card-text">La relación entre HTML y CSS es muy fuerte. Dado que HTML es un lenguaje de marcado (es
+              decir, constituye la base de un sitio) y CSS enfatiza el estilo (toda la parte estética de un sitio web),
+              van de la mano. <br>
+              CSS no es técnicamente una necesidad, pero no querrás tener un sitio que solo tenga HTML, ya que se vería
+              completamente desnudo.</p>
+            <a href="#" class="btn btn-outline-secondary">A paseo</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- Footer o cierre visual de la página -->
+    <div class="container my-5">
+    <style>
+      /* body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      } */
+
+      .footer-container {
+        flex: 1;
+      }
+
+      .footer {
+        padding: 10px;
+        background-color: #f8f9fa;
+        /* text-align: ; */
+        border-top: 1px solid #dee2e6;
+
+      }
+    </style>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+          <p>&copy; 2024 Porter, Inc. <br> Todos los derechos reservados. <br>
+          C/ Rue del Percebe, 13 <br>
+          28017 MADRID <br>
+          <img src="../images/logoCorreo.png" width="28" height="28"> <a class="enlace2"
+                href="mailto:manapo@gmail.com"><!-- <span style="padding-left: 6px;"> -->iCompany@iCompany.com</span></a>
+            </p>
+
+          <p>Recuerda: <br>
+            👉 CTA,<br> 👉 alfa+beta+ganma=(caraterísticas, beneficios y emoción)<br> 👉sentido y finalidad
+          </p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a href="tel:+34688142800"><img src="../images/phone_14743 (4).png" alt=""><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-twitter"
+                  viewBox="0 0 16 16"></li></svg></a>
+            <li class="ms-3"><a href="https://twitter.com"><img src="../images/social_twitter_bird_2554.png" alt=""><svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-twitter"
+                  viewBox="0 0 16 16"></li></svg>
+            <li class="ms-3"><a href="https://instagram.com"><img src="../images/instagram_ig_logo_icon_181651.png"
+                  alt=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                  class="bi bi-instagram" viewBox="0 0 16 16"></li></svg>
+            <li class="ms-3"><a href="https://facebook.com"><img src="../images/facebook_logo_icon_181652.png"
+                  alt=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                  class="bi bi-facebook" viewBox="0 0 16 16"></li></svg>
+            </a>
+            </a>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+ <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

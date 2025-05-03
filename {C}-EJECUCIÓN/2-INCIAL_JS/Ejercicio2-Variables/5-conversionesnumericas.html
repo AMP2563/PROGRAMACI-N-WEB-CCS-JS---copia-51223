@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones numéricas</title>
+</head>
+<body>
+    <!-- Como ya habíamos visto, todos los 
+    datos que recogemos a través de nuestro cliente(navegador)
+    serán de tipo string. Para ellos necisitamos transformar ese dato
+    en caso de uso mumérico a number
+     -->
+     <!-- Arquitectura del script -->
+     <!-- 1º declaración de la variable
+            Variables principales
+            Variables secundarias
+            Variables de apoyo
+    
+    -->
+    <script>
+        /* var dato = 0;/* Aquí vemos una variable implícita */
+       /*  dato = prompt('Escribe un número'); */
+       
+        /* Variable, valor y método explícito */ 
+        var dato = prompt('Escribe un número decimal');
+        console.log(dato);
+        console.log(dato + ' qué tipo es: ' + typeof(dato));
+
+        /* CONVERSIÓN DE LAS CADENAS DE TEXTOS 
+        Habrá dos métodos principales:
+
+        a)parseFloat()
+            -Convertirá el argumento string devolviendo un número de punto flotante, es decir,
+            si el primer carácter no se puede convertir a número no delvoverá un NaN,
+            asociado a un NULL.
+            -Si es capaz de reconocer el primer carácter en número seguirá construyendo la
+            la estructura numérica y cuando identifica el decimal, es decir, la coma, 
+            continua costruyendo el argumento numérico.
+
+        b)parseInt()
+            -Convertirá el argumento string devolviendo un número entero;
+            es decir, si el caracter no se puede convertir en número, NaN, y asociado a un NULL.
+            -El funcionamiento de dicho método, es similar al float, pero inverso, al percibir
+            el punto, lo observará y no continuará la construcción del argumento numérico.
+
+*/
+/* a) */
+var real = parseFloat(dato);
+console.log(real + ' qué tipo de variable es: ' +typeof(real));
+console.log('dto. creado a la variable: ' + real*0.1);
+/* b) */
+var entero = parseInt(dato);
+console.log(entero);
+console.log('Total a pagar ' + ((entero) - (0.5)));
+    </script>
+</body>
+</html>

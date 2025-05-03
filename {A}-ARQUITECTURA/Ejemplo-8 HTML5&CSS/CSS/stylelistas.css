@@ -1,0 +1,26 @@
+ol,
+/* ul {
+    list-style: none;
+    text-transform: uppercase;
+} */
+img {
+    width: 60px;
+}
+.colocacionLink{
+    text-align: left;
+    float: left;
+}
+ol,
+    li {width: 110px;
+}
+dl {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:initial;
+    font-style: italic ;
+}
+dt {
+    font-style: normal;
+}
+dl {
+    font-style: italic;
+}

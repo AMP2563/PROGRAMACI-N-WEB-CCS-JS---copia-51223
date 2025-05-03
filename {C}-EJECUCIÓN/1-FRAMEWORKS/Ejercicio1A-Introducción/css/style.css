@@ -1,0 +1,35 @@
+.border-dashed { --bs-border-style: dashed; }
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 1em;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* Visualición del hr */
+
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .titulos {
+   /*  margin-top: 6em; */
+    font-size: large;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    /* background-color: cornsilk; */
+    
+  }
+.degradado {
+  color: rgba(186, 184, 184, 0.888);
+}

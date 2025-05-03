@@ -1,0 +1,78 @@
+/* *, body {
+    cambios globales de cualquier atributo y valor aquí referenciado
+ } */
+
+
+
+form,
+fieldset {
+
+    width: 400px;
+    margin: 0 auto;
+    padding: letf 10px;
+    /* margin-left: 32px; revisar com oejecuta en cascad de centrado a una nueva orden */
+}
+
+label {
+    text-align: left;
+    display: inline-block;
+    padding: 6px;
+    font-weight: bold;
+}
+
+/* ----NUEVOS SELECTORES EN LA COCEPCIÓN DE ESTILOS----
+
+I. Asociaciones, basadas en los elementos con el espacio (elemento,elemento, otro asociado que era
+nombrádolos, (elemento elemnto div p), los nuevos selectores asociaran atributos # 
+*/
+input:disabled {
+    color: red;
+    font-weight: bold;
+
+}
+/* II. Asociaciones que añaden más directivas, clásicas :hover (típicos del resalto para los botones)
+:active (típicos del link) :focus (seleccionar foco en las box) */
+input:focus{
+    /* Cambios vicuales cuando se ejecuta */
+    border: 6px solid skyblue
+}
+/* Onmouse, cambios visuales cuando el cursor está encima del elemnto */
+
+button:hover,
+input:hover{
+    color: wheat;
+    font-weight: bold;
+    padding: 2px;
+    background-color: rgb(120, 109, 97);
+    
+    /*  div a,div button{
+    
+    }*/
+}
+/* En los link, cambio visual si ya se ha seleccionado */
+
+a:visited{
+    color: green;
+    font-weight: bold;
+}
+label:active{
+    background-color: brown;
+    font-weight: bold;
+    color: aliceblue;
+}
+/* III ASOCIACIONES DE CONCATENACIÓN, etiquetas, atributos y selectores
+    A) Asociamos con el símbolo (:)
+        imput:checked
+    B) Concatenaciones de atributos y valores ([])
+        input[type=checkbox]:chequed
+    C) Condiciones asociadas a través del símbolo (+)
+        input[type=checkbox]:checked+label{
+            estilos ccs a generar
+        }
+*/
+input[type=checkbox]:checked+label{
+    font-weight: bold;
+    color: blue;
+    
+}
+

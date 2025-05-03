@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+</head>
+
+<body>
+    <!--
+        ---------LAS TABLAS------------
+        Las tablas en la configuración de html, serán un lugar perfeCto
+        para comprender el mapeo de una página web.
+        - Definida por su sintaxis
+            Etiqueta:
+            5 etiquetas contenedoras que definen la tabla
+            <table>   Cuerpo de la tabla
+            <th>      Cabecera de la tabla
+            <tr>      Etiqueta de filas
+            <td>      Etiqueta de los datos (columnas)
+            <caption> Etiqueta de título leyenda
+
+    -->
+    <div style="text-align: center; margin: 0 auto;">
+        <table style="background-color: gainsboro; text-align: center; margin: 0 auto;">
+            <!--OJO EN <table> NO INFLUYE EL style del DIV-->
+            <h3>Ejemplo 1: <b>Tablas simples</b>
+            </h3>
+            <caption><strong>Numeración del 1 al 12</strong></caption>
+            <tr style="background-color: blueviolet;">
+                <td>UNO</td>
+                <td>DOS</td>
+                <td>TRES</td>
+                <td>CUATRO</td>
+            </tr>
+            <tr>
+                <td style="color: rgba(32, 8, 129, 0.308);">
+                CINCO</td>
+                <td>SEIS</td>
+                <td>SIETE</td>
+                <td>OCHO</td>
+            </tr>
+            <tr>
+                <td style="color: gray;">
+                 UNO</td>
+                <td>NUEVE</td>
+                <td>DIEZ</td>
+                <td>ONCE</td>
+            </tr>
+        </table>
+        <!--
+            Combinación de celdas
+            Dos atributos importantes
+            a) colspan- valor como número de espacios a combinar en la columna
+            b) rowspan- valor numérico con el número de espacios a combinar con la fila
+        -->
+        <h3>Tabla con celdas COMBINADAS</h3>
+        <table border="2" style="background-color: gainsboro; text-align: center; margin: 0 auto;">
+            <!--OJO NO IMFLUYE EL DIV-->
+            <h3>Ejemplo 2: <b>tablas simples</b>
+            </h3>
+            <caption><strong>Numeración del 1 al 12</strong></caption>
+            <th>COLUMNA 1</th>
+            <th>COLUMNA 2</th>
+            <th>COLUMNA 3</th>
+            <th>COLUMNA 4</th>
+            <tr>
+                <td colspan="2" style="color: blue;">DATO 1</td>
+                <!-- <td> DATO DOS</td> -->
+                <td>DATO TRES</td>
+                <td rowspan="2">
+                    <div>
+                        DATO CUATRO
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: rgba(7, 42, 42, 0.308);">DATO CINCO</td>
+                <td>DATO SEIS</td>
+                <td>DATO SIETE</td>
+                <!-- <td>DATO OCHO</td> -->
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2" gray;">DATO NUEVE</td>
+                <td>DATO DIEZ</td>
+                <td>DATO ONCE</td>
+                <!--<td>DATO DOCE</td>  -->
+            </tr>
+            <tr>
+                <td style="color: gray;">DATO 13</td>
+                <td>DATO 14</td>
+                <!-- <td>DATO 15</td>
+                <td>DATO 16</td> -->
+            </tr>
+        </table>
+        <table border="2" style="text-align:center; margin:0 auto">
+            <h3 style="font-family: 'Courier New', Courier, monospace;">Ejemplo 3: las agrupaciones, visualización</h3>
+            <caption style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">PERIODICO
+                DIGITAL</caption>
+            <tr>
+                <th>NOTICIAS</th>
+                <th>DEPORTES</th>
+                <th>TIEMPO</th>
+            </tr>
+            <tr>
+                <td>NACIONAL</td>
+                <td>Fútbol</td>
+                <td>Mundo</td>
+            </tr>
+            <tr>
+                <td>SUCESOS</td>
+                <td>Tenis</td>
+            </tr>
+            <tr>
+                <td>INTERNACIONAL</td>
+                <td>Beisbol</td>
+            </tr>
+            <colgroup>
+                <col style="background-color: bisque;">
+                <col span="2" style="background-color: lightyellow;" </colgroup>
+        </table>
+        <!--
+            Ejercicio práctico
+        -->
+        <div style="text-align: left;">
+            <h3>Ejercicio práctico</h3>
+            <p>Realizar una tabla con dos o más buscadores en el cual</p>
+            <ol>
+                <li>Defina con un enlace a dicha página cada buscador</li>
+                <li>Inserte dos imágenes o más de los buscadores</li>
+                <li>Dentro de una tabla de tres dos o más columnas</li>
+                <li>Haga una pequeña descripción del browser</li>
+            </ol>
+        </div>
+        <table border="2" style="text-align: center;margin: 0 auto">Ejecicio
+            <tr>
+
+                <th>Buscador</th>
+                <th>Descripción</th>
+                <th>Enlace</th>
+            </tr>
+            <tr>
+                <td><img style="width: 132x; height: 96px;" src="image/google.png" alt=""></td>
+                <td>Buscador sobrevalorado</td>
+                <td><a href="https://www.google.es/">Ir a Google</a></td>
+            </tr>
+            <tr>
+                <td>Bing</td>
+                <td>Buscador emergente</td>
+                <td>Ir a Bing</td>
+            </tr>
+            <tr>
+                <td>opera</td>
+                <td>Buscador cantarín</td>
+                <td>Ir a opera</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

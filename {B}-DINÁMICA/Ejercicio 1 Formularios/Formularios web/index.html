@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios nuevos selectores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div>
+        <!--
+            --------CONFIGURACIONES DEL CUERPO DEL FORMULARIO--------------
+            Los encontramos dentro de la etiqueta <form> en los siguientes atributos
+                a) action=""
+                    Lugar hacia donde irán los datos
+                b) metod=""
+                    Cómo se van a enviar dichos datos, utilizaremos dos valores:
+                    1. get: Los datos se envía an través de la url separados por "?"" y concatenados
+                    por "&"
+                    Usos principales:
+                        -Pocos datos y se ajusten a derecho
+                        -Información no confidencial ni insensible
+                        -Peticiones Idempotentes (no ha cambios en el servidor)
+                    2. post: enviado en el propio cuerpo de la petición
+                        Usos principales:
+                        -gran cantidad de datos, no hay establecimiento de límite
+                        -información confidencial
+                        -petición no Idempotentes (cambios en el servidor, creas datos, atualizas datos, visulizas datos
+                        o borras datos) CRUD
+        -->
+        <h2>Formulario y selectores</h2>
+        <form action="" method="get">
+            <!--
+            lo que diferencia el formalario sin HTML5 del web, será su propia ejecución
+        -->
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <label for="">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Introduce tu nombre"><br>
+                <label for="">Apellidos:</label>
+                <input type="text" name="Apellidos" placeholder="Introduce tus dos apellidos">
+                <label for="">Edad:</label>
+                <input type="number" value="22" name="edad" min="18" style="width: 48px;" disabled>
+                <label for="">Sexo:</label>
+                <input type="checkbox" /><label for="">Hombre</label>
+                <input type="checkbox" /><label for="">Mujer</label>
+                <input type="checkbox" /><label for="">Fluido</label>
+                <label for="">Fecha de Nacimiento:</label>
+                <input type="date" name="fechaN">
+            </fieldset>
+            <fieldset>
+                <legend>Reserva</legend>
+                <label for="">Escoge aventura:</label>
+                <select name="" id="">
+                    <div class"cf">
+                        <option value="0">-----Elige aventura-----</option>
+                        <option value="1">Descensos rápidos (150 € por persona)</option>
+                        <option value="2">Viaje en velero (135 € por persona) </option>
+                        <option value="3">Clases de Surf (140 € por clase) </option>
+                        <option value="4">Viaje de borrachera (200 € por persona) </option>
+                    </div>
+                </select>
+                <label for="">Fecha de reserva:</label>
+                <input type="datetime-local">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="">e-mail:</label>
+                <input type="email" name="email"><br>
+                <label for="">Añadir comentario:</label>
+                <textarea name="" id="" cols="49" rows="5"></textarea>
+                <div class="cf"><input type="radio" name="" id="" checked="true">Acepto las condiciones
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Datos adjuntos</legend>
+                <input type="file" name="DNI">
+            </fieldset>
+            <fieldset>
+                <legend>Enviar</legend>
+                <div class="centrado">
+                    <input type="submit">
+                    <button type="reset">Borrar</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Danos tu valoración</legend>
+                <input type="" name="valoracion" min="1" max="3" list="opinion">
+                <datalist id="opinion">
+                    <option value="1">Buena 👌</option>
+                    <option value="5">Muy buena 👍</option>
+                    <option value="0">Regular 🖖</option>
+                </datalist>
+            </fieldset>
+            <a href="">Ir al principio</a>
+    </div>
+    </form>
+    <a type="button" href="https://forms.office.com/r/fDV6yi4gL1?embed=true">FORMULARIO</a></div>
+    <iframe src="https://forms.office.com/r/fDV6yi4gL1?embed=true" frameborder="0"></iframe>
+</body>
+
+</html>

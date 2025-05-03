@@ -1,0 +1,72 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+    /* 
+    Inyectamos las imágenes a traves del bacground */
+
+    background-image: url();
+    background-repeat: no-repeat; /*  */
+    background-size: cover;
+    /* Background.size:
+    auto: va por defecto
+    cover: va al ajuste
+    container: a la expansión de su elemento */
+}
+/*
+div, definido por la extensión de un xcroll 
+ */
+div{
+    width: 980px; /* ancho web, y entorno 360 a 380 px en móvil, 1080 en smart TV
+    Entendido como ENCAPSULADO
+     */
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    width: 980px;
+    height: 120px;
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+}
+nav{
+    width: 980px;
+    height: 80px;
+    background-color: navy;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 40px;
+}
+section{
+    width: 780px;
+    height: 420px;
+    background-color: lightgray;
+    float: left;
+    font-weight: bold;
+    
+    
+}
+article{
+    width: 780px;
+    height: 210px;
+    background-color: lightcyan;
+}
+aside{
+    width: 195px;
+    height: 220px;
+    background-color: lightsalmon;
+    color: white;
+    font-weight: bold;
+    float: right;
+    border: 1px solid black
+}
+footer{
+    float: left;
+    width: 980px;
+    height: 80px;
+    background-color: rgb(199, 234, 164);
+    font-weight: bold;
+    color: white;
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llamadas de JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /* Comentarios
+            Podemos ver que en las llamadas de una función van entre paréntesis
+            una función más de visualización o llamada al usuario
+            Sintaxis:
+            document.write("texto o caracteres")
+        apunta ⬆️     ⬆️
+        al document  el método
+            */
+
+        // doble slash permite comentar solo una línea
+
+        document.write("Cara de un marciano 👽");
+    </script>
+
+    <h1>Visualización del usuario</h1>
+
+    
+
+    <script>
+
+        document.write('<h2>Hola 2, desde esta página javaScript 👽');
+
+    </script>
+
+<script>
+    /* Conatos de administrador
+    Lugares de visualización de datos, textos, errores, variables... etc., es decir,
+    es una inspector que encontramos en la consola.
+    Sintaxis:
+    console.log()  
+    */
+
+    console.log('hola...');
+    /* Diferencia entre caracter y operador
+    Veremos que las comillas son un entorno SIEMPRE, SIEMPRE, SIEMPRE, de caracteres.
+    */
+    console.log('3 + 4');
+    console.log(3 + 4);
+
+    /* Concatenación con el símbolo + */
+    console.log('tengo '  + 18 +  ' años');
+
+</script>
+
+<script>
+/* Modificar la visualización del alert */ 
+
+alert("¡Enhorabuena! eres el cliente número 1.000 pulsa ACEPTAR para regoger tu prmio");
+</script>
+
+<script>
+    swal('Bienvenidos')
+
+    swal("¡Enhorabuena! eres el cliente número 1.000 pulsa ACEPTAR para regoger tu premio");
+</script>
+
+<script>
+swal({
+title: "¡Enhorabuena! eres el cliente número 1.000",
+text: "Pulsa ACEPTAR para regoger tu premio",
+icon: "info",
+button: "Aceptar",
+});
+<!-- nay []; -->
+</script>
+
+
+</body>
+
+</html>
